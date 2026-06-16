@@ -1,7 +1,7 @@
 import express from 'express';
 import TelegramBot from 'node-telegram-bot-api';
 
-const botToken = process.env.BOT_TOKEN || '8764783594:AAGNIVwzdcvqnGPS-zTAn6d9IfPKlsieOQU'; 
+const botToken = process.env.BOT_TOKEN;
 const kinoBot = new TelegramBot(botToken, { polling: true });
 
 let kinoBaza = {
